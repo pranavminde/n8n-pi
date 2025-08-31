@@ -4,7 +4,6 @@
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 
 if command -v gum &> /dev/null; then
     gum style --foreground 212 --bold "Running lint checks..."

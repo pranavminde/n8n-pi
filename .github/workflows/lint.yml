@@ -1,10 +1,11 @@
+---
 name: Lint and Test
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [main, develop]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   shellcheck:
@@ -13,14 +14,14 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Run ShellCheck
         uses: ludeeus/action-shellcheck@master
         with:
           severity: warning
           check_together: 'yes'
           format: gcc
-      
+
       - name: Check executable permissions
         run: |
           # Check that all .sh files are executable
@@ -39,7 +40,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Run shfmt
         uses: mvdan/sh@v3
         with:
@@ -51,18 +52,18 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Validate Makefile
         run: |
           # Check Makefile syntax
           make -n help
           make -n check
-          
+
           # Check for common Makefile issues
           if grep -q "^ " Makefile; then
             echo "::warning::Makefile contains spaces instead of tabs"
           fi
-          
+
           # Check all targets are documented
           undocumented=$(grep -E '^[a-zA-Z_-]+:' Makefile | grep -v '##' | grep -v '.PHONY' | grep -v '^help:' || true)
           if [ ! -z "$undocumented" ]; then
@@ -75,7 +76,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Validate YAML
         uses: ibiqlik/action-yamllint@v3
         with:
@@ -95,7 +96,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Lint Markdown files
         uses: DavidAnson/markdownlint-cli2-action@v14
         with:
@@ -114,7 +115,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Run Trivy security scanner
         uses: aquasecurity/trivy-action@master
         with:
@@ -122,9 +123,9 @@ jobs:
           scan-ref: '.'
           format: 'sarif'
           output: 'trivy-results.sarif'
-      
+
       - name: Upload Trivy results to GitHub Security
-        uses: github/codeql-action/upload-sarif@v2
+        uses: github/codeql-action/upload-sarif@v3
         if: always()
         with:
           sarif_file: 'trivy-results.sarif'
