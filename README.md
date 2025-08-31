@@ -1,12 +1,11 @@
-# 🍓 n8n-Pi OS: Custom Raspberry Pi Distro with n8n pre-installed
-
 <div align="center">
+
+# 🍓 n8n-Pi OS
+## Custom Raspberry Pi Distro with n8n pre-installed
 
 ![n8n-Pi OS](https://img.shields.io/badge/n8n--Pi_OS-Custom_Distro-ff6d5a?style=for-the-badge&logo=raspberry-pi&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)
-
-## A custom Raspberry Pi OS image with n8n pre-installed and ready to use
 
 **Author:** Stefano Amorelli <stefano@amorelli.tech>  
 **Contributions Welcome:** [github.com/stefanoamorelli/n8n-pi](https://github.com/stefanoamorelli/n8n-pi)
@@ -69,7 +68,7 @@ git clone https://github.com/stefanoamorelli/n8n-pi.git
 cd n8n-pi
 
 # Run the image builder (requires sudo)
-sudo ./create-image.sh
+sudo ./scripts/create-image.sh
 
 # Image will be created in ./releases/
 # Flash with the included script
@@ -140,7 +139,7 @@ MIT License - See [LICENSE](LICENSE) file
 
 <div align="center">
 
-## Made with ❤️ by Stefano Amorelli
+Made with ❤️ by Stefano Amorelli
 
 [Star this project](https://github.com/stefanoamorelli/n8n-pi) | [Report Bug](https://github.com/stefanoamorelli/n8n-pi/issues/new?template=bug_report.md) | [Request Feature](https://github.com/stefanoamorelli/n8n-pi/issues/new?template=feature_request.md) | [Contact](mailto:stefano@amorelli.tech)
 
