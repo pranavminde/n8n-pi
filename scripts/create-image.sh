@@ -495,6 +495,9 @@ main() {
     
     print_banner
     
+    # Create output directory early
+    mkdir -p $OUTPUT_DIR
+    
     gum style --foreground 212 "This will create a custom Raspberry Pi OS image with n8n pre-installed"
     gum style --foreground 214 "Requirements: ~16GB free space, root access"
     echo

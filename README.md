@@ -30,17 +30,21 @@ n8n-pi OS is a **custom Raspberry Pi image** that comes with n8n pre-installed, 
 
 ## Quick start
 
-### Download pre-built image
+### Option 1: Download pre-built image
+
+Download the latest pre-built image from the [Releases page](https://github.com/stefanoamorelli/n8n-pi/releases/latest).
 
 ```bash
 # Download the latest release
-wget https://github.com/stefanoamorelli/n8n-pi/releases/latest/download/n8n-pi-os.img.xz
+wget https://github.com/stefanoamorelli/n8n-pi/releases/latest/download/n8n-pi-os-v1.0.0.img.xz
 
 # Flash to SD card (replace /dev/sdX with your SD card)
-xzcat n8n-pi-os.img.xz | sudo dd of=/dev/sdX bs=4M status=progress
+xzcat n8n-pi-os-*.img.xz | sudo dd of=/dev/sdX bs=4M status=progress
 
 # Or use Raspberry Pi Imager with custom image option
 ```
+
+> **Note:** Pre-built images are created for each release. Check the [Releases page](https://github.com/stefanoamorelli/n8n-pi/releases) for all available versions.
 
 ### First boot
 
@@ -51,16 +55,16 @@ xzcat n8n-pi-os.img.xz | sudo dd of=/dev/sdX bs=4M status=progress
 5. Access n8n at: `http://n8n-pi.local` or `http://<pi-ip-address>`
 6. Login with credentials from `/boot/n8n-credentials.txt`
 
-## Build your own image
+### Option 2: Build your own image
 
-### Requirements
+#### Requirements
 
 - Linux system (Ubuntu/Debian/Fedora)
 - 16GB+ free disk space
 - sudo access
 - ARM emulation support (qemu-user-static)
 
-### Build process
+#### Build process
 
 ```bash
 # Clone the repository
