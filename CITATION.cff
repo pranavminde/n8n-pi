@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software in your research or work, please cite it as follows."
+authors:
+  - family-names: Amorelli
+    given-names: Stefano
+    orcid: "https://orcid.org/0009-0004-4917-0999"
+title: "n8n-Pi OS: Custom Raspberry Pi Distro with n8n"
+version: 1.0.0
+date-released: 2025-01-31
+url: https://github.com/stefanoamorelli/n8n-pi
