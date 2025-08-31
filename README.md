@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)
 
-**A custom Raspberry Pi OS image with n8n pre-installed and ready to use**
+## A custom Raspberry Pi OS image with n8n pre-installed and ready to use
 
 **Author:** Stefano Amorelli <stefano@amorelli.tech>  
 **Contributions Welcome:** [github.com/stefanoamorelli/n8n-pi](https://github.com/stefanoamorelli/n8n-pi)
@@ -22,7 +22,7 @@ n8n-pi OS is a **custom Raspberry Pi image** that comes with n8n pre-installed, 
 ### What you get
 
 - n8n runs automatically when you boot your Pi
-- Web interface at `http://n8n-pi.local` 
+- Web interface at `http://n8n-pi.local`
 - No Docker needed - runs natively for better performance
 - PM2 keeps n8n running even after crashes
 - Simple commands like `n8n-status` and `n8n-logs`
@@ -124,6 +124,7 @@ n8n-backup     # Backup workflows
 ## Security
 
 The image includes:
+
 - UFW firewall (ports 22, 80, 443, 5678)
 - fail2ban for SSH protection
 - Unique password generated on first boot
@@ -139,7 +140,7 @@ MIT License - See [LICENSE](LICENSE) file
 
 <div align="center">
 
-**Made with ❤️ by Stefano Amorelli**
+## Made with ❤️ by Stefano Amorelli
 
 [Star this project](https://github.com/stefanoamorelli/n8n-pi) | [Report Bug](https://github.com/stefanoamorelli/n8n-pi/issues/new?template=bug_report.md) | [Request Feature](https://github.com/stefanoamorelli/n8n-pi/issues/new?template=feature_request.md) | [Contact](mailto:stefano@amorelli.tech)
 

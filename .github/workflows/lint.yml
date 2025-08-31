@@ -105,4 +105,3 @@ jobs:
         with:
           globs: '**/*.md'
           config: '.markdownlint.json'
-
