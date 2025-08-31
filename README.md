@@ -68,7 +68,7 @@ git clone https://github.com/stefanoamorelli/n8n-pi.git
 cd n8n-pi
 
 # Run the image builder (requires sudo)
-sudo ./scripts/create-image.sh
+make build
 
 # Image will be created in ./releases/
 # Flash with the included script
