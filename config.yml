@@ -1,0 +1,37 @@
+# n8n-Pi OS Configuration
+# Author: Stefano Amorelli <stefano@amorelli.tech>
+
+project:
+  name: n8n-Pi OS
+  version: 1.0.0
+  author: Stefano Amorelli
+  email: stefano@amorelli.tech
+  github: github.com/stefanoamorelli/n8n-pi
+
+build:
+  work_dir: /tmp/n8n-pi-os-build
+  output_dir: ./releases
+  image_name: n8n-pi-os
+  base_image_url: https://downloads.raspberrypi.com/raspios_lite_arm64/images/raspios_lite_arm64-2024-11-19/2024-11-19-raspios-bookworm-arm64-lite.img.xz
+  
+requirements:
+  min_space_gb: 16
+  tools:
+    - wget
+    - xz
+    - losetup
+    - parted
+    - mkfs.ext4
+    - rsync
+    - qemu-arm-static
+
+n8n:
+  node_version: 20
+  default_user: admin
+  default_password: changeme
+  port: 5678
+  
+system:
+  swap_size_mb: 2048
+  timezone: Europe/London
+  hostname: n8n-pi
