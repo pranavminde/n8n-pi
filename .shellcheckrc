@@ -1,0 +1,14 @@
+# ShellCheck configuration for n8n-Pi OS
+# Author: Stefano Amorelli <stefano@amorelli.tech>
+
+# Ignore these checks
+disable=SC2086  # Double quote to prevent globbing (we know when we want globbing)
+disable=SC2181  # Check exit code directly (sometimes [ $? -eq 0 ] is clearer)
+disable=SC1091  # Not following sourced files
+disable=SC2154  # Variable may be referenced but not assigned (false positives with sourced files)
+
+# Set shell
+shell=bash
+
+# External sources
+external-sources=true
